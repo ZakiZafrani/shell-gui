@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("shell-gui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2dd3394cd926c20cc24f61d8185517c31883703c")]
 [assembly: System.Reflection.AssemblyProductAttribute("shell-gui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("shell-gui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

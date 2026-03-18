@@ -1,0 +1,11 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="shell_gui.MainWindow"
+        Width="400" Height="300"
+        Title="Shell GUI">
+
+    <TextBlock Text="Hello Avalonia!"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"/>
+    
+</Window>

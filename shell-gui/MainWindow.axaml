@@ -1,11 +1,50 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="shell_gui.MainWindow"
-        Width="400" Height="300"
-        Title="Shell GUI">
-
-    <TextBlock Text="Hello Avalonia!"
-               HorizontalAlignment="Center"
-               VerticalAlignment="Center"/>
+        Width="400" Height="250"
+        CanResize="False"
+        WindowStartupLocation="CenterScreen">
     
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <!-- Label -->
+        <TextBlock Text=":הזן פקודה" 
+                   Grid.Row="0" Grid.Column="2" 
+                   VerticalAlignment="Center"
+                   Margin="0,0,5,0"/>
+
+        <!-- TextBox for command input -->
+        <TextBox x:Name="CommandTextBox" 
+                 Grid.Row="0" Grid.Column="0"
+                 Width="250"
+                 HorizontalAlignment="Stretch"/>
+
+        <!-- Run Button -->
+        <Button x:Name="RunButton"
+                Content="הרץ"
+                Grid.Row="1" Grid.Column="0"
+                HorizontalAlignment="Left"
+                Margin="0,5,0,5"
+                Width="60"
+                Click="RunButton_Click"/>
+
+        <!-- Output TextBox -->
+        <TextBox x:Name="OutputTextBox"
+                 Grid.Row="2" Grid.Column="0"
+                 Grid.ColumnSpan="2"
+                 Margin="0,5,0,0"
+                 AcceptsReturn="True"
+                 IsReadOnly="True"
+                 TextWrapping="Wrap"/>
+    </Grid>
 </Window>
